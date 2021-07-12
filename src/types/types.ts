@@ -1,12 +1,7 @@
-export enum Unit {
-  Kilometers = 'ki',
-  Miles = 'mi'
-}
+export type Unit = "km" | "mi";
 
-export enum Fuel {
-  Diesel = 'Diesel',
-  Petrol = 'Petrol'
-}
+export type Fuel = "Diesel" | "Petrol";
+
 
 export type Color = string;
 
