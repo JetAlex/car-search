@@ -1,0 +1,23 @@
+.m-search-cars {
+  .s-image-4x5{
+
+    overflow: hidden;
+
+    position: relative;
+
+    &:after {
+      content: "";
+      display: block;
+      padding-bottom: 4/5*100%;
+    }
+  }
+
+  .s-car-pic {
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+  }
+}

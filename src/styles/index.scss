@@ -1,0 +1,56 @@
+
+$font-family-base: Roboto;
+$primary: #EA7F28;
+
+$default-color: #4A4A4A;
+
+$hover-color: #D37324;
+
+
+.s-star-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+
+  cursor: pointer;
+}
+
+.s-star-icon--filled {
+  fill: $primary;
+}
+
+.btn {
+  &.btn-primary {
+    color: #ffffff;
+
+    &:hover {
+      color: #ffffff;
+      background-color: $hover-color;
+    }
+  }
+  &.btn-link-disabled {
+    color: $default-color;
+    cursor: default;
+
+    pointer-events: none;
+
+    &:hover {
+      color: $default-color;
+      text-decoration: none;
+    }
+  }
+  &.btn-link {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+    &:focus {
+      box-shadow: none;
+    }
+  }
+}
+
+@import "~bootstrap/scss/bootstrap";
+
+
+
